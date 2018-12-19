@@ -6,29 +6,59 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #555555;
 }
+.navigation {
+  position: fixed;
+  z-index: 1;
+  background: white;
+  width: 80%;
+  margin: 0 200px;
+}
+.logo {
+  position: relative;
+  float: left;
+  margin-right: 200px;
+}
 .button-div {
   position: relative;
   float: left;
   width: 100px;
   height: 25px;
-  margin: 12px;
+  padding: 12px;
   line-height: 25px;
   text-align: center;
+  border-bottom: 3px solid white;
+  cursor: pointer;
+}
+.button-div:hover {
+  border-bottom: 3px solid orange;
 }
 .search-bar {
   position: relative;
   float: right;
-  width: 250px;
-  height: 25px;
   margin: 12px;
   background-color: lightgrey;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+.search-bar>input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  height: 25px;
   line-height: 25px;
-  border-radius: 12px;
-  padding: 0px 25px;
+  background-color: lightgrey;
+}
+.search-icon {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url("../media/icons-20.png") 0 0;
+  margin: 3px;
 }
 .poster {
   position: relative;
-  top: 50px;
+  top: 52px;
   height: 550px;
   background-image: url("../media/poster.jpg");
   background-size: cover;
@@ -47,13 +77,18 @@ body {
   float: left;
   width: 250px;
   background-color: orange;
+  border: none;
   border-radius: 12px;
   text-align: left;
   padding: 0px 25px;
 }
-.poster>.text>.button-div::after {
-  content: "[-]";
+.apply-img {
+  position: relative;
   float: right;
+  width: 20px;
+  height: 20px;
+  background: url("../media/icons-20.png") 0 20px;
+  margin: 3px;
 }
 .content {
   position: relative;
@@ -78,6 +113,7 @@ a {
 .subscribe {
   position: relative;
   float: left;
+  top: 50px;
   height: 400px;
   width: 100%;
   color: white;
