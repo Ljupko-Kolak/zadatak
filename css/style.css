@@ -87,13 +87,13 @@ body {
   float: right;
   width: 20px;
   height: 20px;
-  background: url("../media/icons-20.png") 0 20px;
+  background: url("../media/icons-20.png") 0 40px;
   margin: 3px;
 }
 .content {
   position: relative;
   top: 50px;
-  padding: 10px 100px;
+  padding: 10px 200px;
 }
 hr {
   width: 80%;
@@ -105,6 +105,21 @@ hr {
   margin: 25px;
   width: 290px;
   font-size: 14px;
+  border-bottom: 10px solid lightslategrey;
+  padding-bottom: 20px;
+}
+.tc-image {
+  width: 80px;
+  height: 80px;
+}
+#tci1 {
+  background: url("../media/icons-80.png") 0 0;
+}
+#tci2 {
+  background: url("../media/icons-80.png") 0 -80px;
+}
+#tci3 {
+  background: url("../media/icons-80.png") 0 -160px;
 }
 a {
   color: orange;
@@ -114,17 +129,44 @@ a {
   position: relative;
   float: left;
   top: 50px;
-  height: 400px;
+  height: 500px;
   width: 100%;
-  color: white;
-  background-color: aquamarine;
+  background: url("../media/paralax.jpg") -550px 600px;
 }
 .subscribe>h3 {
   padding: 50px 200px;
+  color: white;
 }
-.map {
+.subscription-box {
+  margin: 0 200px;
+  background-color: white;
+  padding: 20px;
+}
+.signup {
+  font-weight: bold;
+  border-left: 2px solid grey;
+  padding: 20px;
+}
+.subscription-input {
+  width: 300px;
+  margin: 12px;
+  background-color: lightgrey;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+.subscription-input>input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  background-color: lightgrey;
+}
+.sub-icon {
   position: relative;
-  top: 900px;
-  height: 500px;
-  background-color: bisque;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background: url("../media/icons-20.png") 0 40px;
 }
