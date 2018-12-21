@@ -129,7 +129,9 @@ a {
 .subscribe {
   height: 500px;
   width: 100%;
-  background: url("../media/paralax.jpg") -550px 600px;
+  background: url("../media/paralax.jpg") 0 -1300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .subscribe>h3 {
   padding: 50px 200px;
@@ -161,12 +163,21 @@ a {
   padding: 0 10px;
 }
 .subscription-input>input {
-  width: 220px;
+  margin-top: 7px;
+  width:200px;
   height: 25px;
   border: none;
   height: 25px;
   line-height: 25px;
   background-color: lightgrey;
+}
+.subscription-input>div {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 20px;
 }
 .sub-icon {
   position: relative;
@@ -184,6 +195,67 @@ a {
   position: relative;
   top: 213px;
   left: 538px;
+}
+.contact {
+  position: absolute;
+  top: 1430px;
+  left: 400px;;
+  padding: 25px;
+  color: white;
+  background-color: darksalmon;
+  width: 880px;
+  height: 300px;
+  text-align: center;
+}
+.contact>div {
+  float: left;
+  width: 250px;
+  height: 100%;
+  margin: 0 20px;
+  text-align: left;
+}
+.contact>div>input, .contact>div>textarea{
+  width: 100%;
+  margin: 2px 0;
+}
+#stars {
+  width: 200px;
+  height: 40px;
+}
+.full-star {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url("../media/icons-40.png") 0 80px;
+}
+.empty-star {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url("../media/icons-40.png") 0 40px;
+}
+.contact .button-div {
+  position: relative;
+  float: right;
+  width: 150px;
+  color: #555555;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.send-img {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url("../media/icons-20.png") 0 80px;
+  margin: 3px;
+}
+#message {
+  height: 100px;
 }
 footer {
   height: 100px;
