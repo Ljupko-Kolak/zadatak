@@ -8,6 +8,7 @@ body {
 }
 .navigation {
   position: fixed;
+  top: 0;
   z-index: 1;
   background: white;
   width: 80%;
@@ -16,6 +17,7 @@ body {
 .logo {
   position: relative;
   float: left;
+  padding-top: 7px;
   margin-right: 200px;
 }
 .button-div {
@@ -58,7 +60,7 @@ body {
 }
 .poster {
   position: relative;
-  top: 52px;
+  margin-top: 52px;
   height: 550px;
   background-image: url("../media/poster.jpg");
   background-size: cover;
@@ -91,8 +93,7 @@ body {
   margin: 3px;
 }
 .content {
-  position: relative;
-  top: 50px;
+  height: 450px;
   padding: 10px 200px;
 }
 hr {
@@ -126,9 +127,6 @@ a {
   text-decoration: none;
 }
 .subscribe {
-  position: relative;
-  float: left;
-  top: 50px;
   height: 500px;
   width: 100%;
   background: url("../media/paralax.jpg") -550px 600px;
@@ -146,7 +144,6 @@ a {
 .subscription-text {
   position: relative;
   float: left;
-  top: 40px;
   width: 60%;
 }
 .signup {
@@ -180,20 +177,28 @@ a {
   background: url("../media/icons-20.png") 0 40px;
 }
 .map {
-  position: relative;
-  top: 1365px;
   height: 500px;
   background-color: bisque;
 }
 .map img {
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 213px;
+  left: 538px;
 }
 footer {
-  position: relative;
-  top: 1365px;
   height: 100px;
   line-height: 100px;
   padding: 0 200px;
+}
+.social {
+  position: relative;
+  float: right;
+  top: 10px;
+  width: 200px;
+  height: 100%;
+}
+.social>img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
